@@ -1,5 +1,11 @@
-@app.route('/api')
-def get_api_data():
-    # Updated content for task 2 requirement
-    return jsonify({"status": "success", "version": "2.0_new", "data": "Updated content from the Tutedude_new branch"})
-
+@app.route('/todo')
+def todo_page():
+    return '''
+    <form action="/submittodoitem" method="POST">
+        <label for="itemName">Item Name:</label>
+        <input type="text" id="itemName" name="itemName" required><br><br>
+        <label for="itemDescription">Item Description:</label>
+        <textarea id="itemDescription" name="itemDescription" required></textarea><br><br>
+        <button type="submit">Submit To-Do</button>
+    </form>
+    '''
