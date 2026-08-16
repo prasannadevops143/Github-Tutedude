@@ -1,3 +1,3 @@
-<label for="itemId">Item ID:</label>
-<input type="text" id="itemId" name="itemId"><br><br>
+<label for="itemUuid">Item UUID:</label>
+<input type="text" id="itemUuid" name="itemUuid"><br><br>
 
