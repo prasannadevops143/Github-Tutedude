@@ -1,10 +1,5 @@
-from flask import Flask
+@app.route('/api')
+def get_api_data():
+    # Updated content for task 2 requirement
+    return jsonify({"status": "success", "version": "2.0_new", "data": "Updated content from the Tutedude_new branch"})
 
-app = Flask(__name__)
-
-@app.route('/')
-def home():
-    return "Flask Application Deployed Successfully on AWS Ubuntu!"
-
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
