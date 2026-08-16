@@ -1,3 +1,4 @@
+
 @app.route('/todo')
 def todo_page():
     return '''
@@ -30,4 +31,8 @@ def submit_todo_item():
     collection.insert_one(todo_doc)
 
     return jsonify({"status": "success", "message": "To-Do item successfully recorded in MongoDB"})
+
+<label for="itemHash">Item Hash:</label>
+<input type="text" id="itemHash" name="itemHash"><br><br>
+
 
