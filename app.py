@@ -1,3 +1,3 @@
-<label for="itemUuid">Item UUID:</label>
-<input type="text" id="itemUuid" name="itemUuid"><br><br>
+<label for="itemHash">Item Hash:</label>
+<input type="text" id="itemHash" name="itemHash"><br><br>
 
